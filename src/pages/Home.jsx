@@ -18,9 +18,9 @@ import featureImg03 from "../assets/images/service-03.png";
 
 import products from "../assets/fake-data/products.js";
 
-import foodCategoryImg01 from "../assets/images/hamburger.png";
-import foodCategoryImg02 from "../assets/images/pizza.png";
-import foodCategoryImg03 from "../assets/images/bread.png";
+// import foodCategoryImg01 from "../assets/images/hamburger.png";
+// import foodCategoryImg02 from "../assets/images/pizza.png";
+// import foodCategoryImg03 from "../assets/images/bread.png";
 
 import ProductCard from "../components/UI/product-card/ProductCard.jsx";
 
@@ -50,8 +50,9 @@ const featureData = [
 ];
 
 const Home = () => {
-  const [category, setCategory] = useState("ALL");
-  const [allProducts, setAllProducts] = useState(products);
+  const [category] = useState("ALL");
+  // const [allProducts, setAllProducts] = useState(products);
+  const [, setAllProducts] = useState([]);
 
   const [hotPizza, setHotPizza] = useState([]);
 
